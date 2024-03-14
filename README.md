@@ -16,12 +16,14 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-=> The end to end test is written using cypress.
-=> The project has contexts, hooks, components, svgs in js formats.
-=> If you are allowing location access it shows you current location wheather, if not it shows Hamburg's Whether
-=> The react-open-weather package has so many issues, it is outdated. but due to time constraint I used it. So I created a custom hook to fetch api instead of using from package as package api url is not uptodate.
-=> Click here to look at the website without running in your local [Clima Cast](https://clima-cast.monkwall.com/)
-=> I used generic typescript imports also, created custom \*.d.ts file also.
-=> I used dark and Light themw
-=> CI/CD and hosting is done using vercel
-=> Look at .env.example and create a .env file and provide your key to make it local workable
+## Features
+
+- **End-to-End Testing**: The end-to-end test is written using Cypress.
+- **Project Structure**: The project includes contexts, hooks, components, and SVGs in JavaScript formats.
+- **Location-based Weather**: If you allow location access, it shows you the current weather. Otherwise, it shows Hamburg's weather as default.
+- **Custom API Fetching**: Due to issues with the `react-open-weather` package being outdated, a custom hook is created to fetch the API instead of using the package's API URL.
+- **Demo**: Click [Clima Cast](https://clima-cast.monkwall.com/) to view the website in production.
+- **TypeScript Imports**: Generic TypeScript imports are used, and a custom `*.d.ts` file is created for type definitions.
+- **Themes**: The app supports both dark and light themes.
+- **CI/CD and Hosting**: CI/CD and Hosting are done using Vercel.
+- **Environment Variables**: Look at `.env.example` and create a `.env` file to provide your API key to make it work locally.
