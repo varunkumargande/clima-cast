@@ -1,6 +1,7 @@
 // pages/_app.tsx
 import React from "react";
 import { Metadata } from "@/app/types/types";
+import Head from "next/head";
 
 const Seo: React.FC = () => {
   const title = "Clima Cast";
@@ -31,7 +32,7 @@ const Seo: React.FC = () => {
   };
 
   return (
-    <>
+    <Head>
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>{metadata.title}</title>
@@ -86,7 +87,7 @@ const Seo: React.FC = () => {
       {/* Additional Metadata */}
       <meta name="author" content={metadata.author} />
       <meta name="language" content={metadata.language} />
-    </>
+    </Head>
   );
 };
 
