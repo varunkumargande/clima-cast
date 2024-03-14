@@ -18,9 +18,11 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@/svgs/*": ["./src/app/svgs/*"],
+      "@/components/*": ["./src/app/components/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "types/**/*", "src/app/hooks/useOpenWeather.jsx"],
   "exclude": ["node_modules"]
 }

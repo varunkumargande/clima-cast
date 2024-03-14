@@ -18,16 +18,39 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+:is(.dark .dark\:dark) {
+  background: rgb(15 23 42);
+}
+
+:is(.dark .dark\:dark-nav) {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 10px;
+}
+
+.light {
+  background: #fafafa;
+}
+
+.light-nav {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-padding-top: 139px;
+  overscroll-behavior: none;
 }
