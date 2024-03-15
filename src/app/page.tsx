@@ -2,7 +2,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import Weather from "@/components/Weather";
+// import Weather from "@/components/Weather";
+import Weather from "./components/Weather";
 import { LocationProps } from "./types/types";
 
 const Home: React.FC = () => {

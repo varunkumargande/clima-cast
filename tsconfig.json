@@ -17,12 +17,15 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
-      "@/svgs/*": ["./src/app/svgs/*"],
-      "@/components/*": ["./src/app/components/*"]
+      "@/*": ["src/*"],
+      "@/app/*": ["src/app/*"],
+      "@/svgs/*": ["src/app/svgs/*"],
+      "@/components/*": ["src/app/components/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "types/**/*", "src/app/hooks/useOpenWeather.jsx"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+   "types": ["node", "jsdom", "@testing-library/jest-dom"]
 }

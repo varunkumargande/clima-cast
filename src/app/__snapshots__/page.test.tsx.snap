@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page Component matches snapshot 1`] = `
+<main
+  className="flex flex-col items-center justify-between mt-[139px] pb-3 mb-5"
+>
+  <img
+    alt="Clima Cast"
+    data-nimg="1"
+    decoding="async"
+    height={100}
+    loading="lazy"
+    onError={[Function]}
+    onLoad={[Function]}
+    src="/_next/image?url=%2Flogo.png&w=256&q=75"
+    srcSet="/_next/image?url=%2Flogo.png&w=128&q=75 1x, /_next/image?url=%2Flogo.png&w=256&q=75 2x"
+    style={
+      {
+        "color": "transparent",
+      }
+    }
+    width={100}
+  />
+  <h1
+    className="text-3xl font-bold mb-4"
+  >
+    Clima Cast
+  </h1>
+  <div />
+</main>
+`;
