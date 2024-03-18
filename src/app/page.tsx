@@ -19,7 +19,6 @@ const Home: React.FC = () => {
       navigator.geolocation.getCurrentPosition(
         (position) => {
           const { latitude, longitude } = position.coords;
-          console.log(position);
           setCurrentLocation({
             name: "Your Location",
             lat: latitude?.toString(),
